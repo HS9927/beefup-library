@@ -10,9 +10,29 @@
     <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
     <!-- beefup -->
     <link rel="stylesheet" href="BeefUp-1.4.8/dist/css/jquery.beefup.css">
+    <!-- user-define css -->
+    <style>
+        html, body, h2 {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .beefup__head {
+            color: #ffffff !important;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="container">
+        <article class="beefup mt-2">
+            <h2 class="beefup__head">Snoopy Dev | HS</h2>
+            <div class="beefup__body">
+                <p>Git: code-dot-dev</p>
+                <p>Youtube: code-dot-dev</p>
+            </div>
+        </article>
+    </div>
 
     <!-- jquery -->
     <script src="jquery-3.6.1/jquery.min.js"></script>
@@ -21,7 +41,7 @@
     <!-- user-define script -->
     <script>
         $(document).ready(() => {
-            
+            $(".beefup").beefup();
         });
     </script>
 
